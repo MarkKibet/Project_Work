@@ -1,4 +1,4 @@
-The Case Management System Backend is a powerful tool designed to streamline the management of legal cases, clients, and advocates. It supports essential features like adding, updating, deleting, and searching for cases, alongside seamless advocate assignment.
+The Case Management System (CMS) is a  tool designed to streamline the management of legal cases, clients, and advocates. It supports essential features like adding, updating, deleting, and searching for cases, alongside smooth advocate assignment.
 
 ## Table of Contents
 
