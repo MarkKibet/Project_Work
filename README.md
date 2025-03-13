@@ -1,4 +1,4 @@
-The Case Management System Backend is a robust solution designed to manage legal cases, clients, and advocates. This system allows users to add, update, delete, and search for cases, as well as assign advocates to cases.
+The Case Management System Backend is a powerful tool designed to streamline the management of legal cases, clients, and advocates. It supports essential features like adding, updating, deleting, and searching for cases, alongside seamless advocate assignment.
 
 ## Table of Contents
 
@@ -8,58 +8,80 @@ The Case Management System Backend is a robust solution designed to manage legal
   - [Command-Line Interface (CLI)](#command-line-interface-cli)
   - [Graphical User Interface (GUI)](#graphical-user-interface-gui)
 - [Database Setup](#database-setup)
+- [Database Schema](#database-schema)
 
 ## Features
 
-- **Case Management**: Add, update, delete, search cases, and view case details.
-- **Client Management**: Add Clients and .
-- **Advocate Management**: Add advocates and assign them to cases.
-- **Search Functionality**: Search cases by status, name, court date, event type, and advocate.
-- **CLI and GUI**: Provides both command-line and graphical user interfaces.
+- **Case Management**: Add, update, delete, and search cases.
+- **Client Management**: Add, update, and delete client records.
+- **Advocate Management**: Add advocates, assign them to cases, and remove them.
+- **Document Management**: Upload and manage case-related documents.
+- **Case Details & Payments**: Add case details and manage fee payments.
+- **Search Functionality**: Search by case status, client name, court date, event type, or advocate.
+- **Dual Interface**: Use either the command-line or GUI for flexibility.
 
 ## Installation
 
 1. **Clone the Repository**:
    ```bash
-   git clone 
-   cd Project_Work
+   git clone git@github.com:MarkKibet/Project_Work.git
+
+   ```
+
 2. **Set Up a Virtual Environment**:
-3. Database Setup
-   
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate  
+   ```
 
+3. **Install Dependencies**:
+   ```bash
+   pip install kivy
+   ```
 
+## Database Setup
 
-Database Setup:
+Ensure SQLite is installed 
+   ```bash
+   python database.py
+   ```
 
-Ensure you have SQLite installed. The application uses SQLite for simplicity, but you can configure it to use other databases like PostgreSQL or MySQL.
-Run the following command to set up the database:
+## Usage
 
-python database.py
-Usage
-Command-Line Interface (CLI)
-Run the CLI:
+### Command-Line Interface (CLI)
 
-python cli.py
-CLI Commands:
+Run the CLI to manage cases, clients, and other operations:
+   ```bash
+   python cli.py
+   ```
 
-Add Client: Add a new client to the system.
-Add Case: Add a new case associated with a client.
-Update Case: Update the details of an existing case.
-Delete Case: Delete a case from the system.
-Add Advocate: Add a new advocate to the system.
-Assign Advocate: Assign an advocate to a case.
-Remove Advocate.
-Search Cases: Search for cases based on various criteria.
-View Case Details: View detailed information about a specific case.
-Graphical User Interface (GUI)
+Available Commands:
+- **Exiting the System**: Exit the CSM.
+- **Add Client**: Register a new client.
+- **Add Case**: Create a new case.
+- **Update Case**: Modify existing case details.
+- **Delete Case**: Remove a case.
+- **Add Advocate**: Add a new advocate.
+- **Add Document**: Add a new document related the case.
+- **Assign Advocate**: Link an advocate to a case.
+- **Remove Advocate**: Unlink an advocate from a case.
+- **Search Cases**: Filter cases by multiple criteria.
+- **View Case Details**: See complete case information.
 
-Run the GUI:
-python seed_data.py
-GUI Interface:
+### Graphical User Interface (GUI)
 
-The GUI provides a user-friendly interface to perform the same operations as the CLI.
-Use the buttons and input fields to manage clients, cases, and advocates.
-Database Setup
-The database schema is defined using SQLAlchemy ORM.
-Models include Client, Case, Advocate, Document and CaseDetails.
-Relationships are defined to manage associations between clients, cases, and advocates.
+Launch the GUI for an intuitive, visual experience:
+   ```bash
+   python seed_data.py
+   ```
+
+Navigate through clients, cases, and advocates with ease via buttons and input fields.(This was an esperiment, I tried tkinter first: was a bit complicated, settled on Kivy: which I have used )
+
+## Database Schema
+
+The database structure is built with SQLAlchemy ORM, including models for:
+- **Client**
+- **Case**
+- **Advocate**
+- **Document**
+- **CaseDetails**
