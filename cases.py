@@ -37,6 +37,8 @@ def add_case():
     finally:
         session.close()
 
+
+
 def update_case():
     session = get_session()
     try:

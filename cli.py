@@ -30,6 +30,7 @@ def main():
             add_advocate()
         elif choice == "7":
             assign_advocate()
+        
         elif choice == "8":
             remove_advocate()
         elif choice == "9":
@@ -59,6 +60,7 @@ def menu():
     print("5. Delete Case")
     print("6. Add Advocate")
     print("7. Assign Advocate")
+   
     print("8. Remove Advocate")
     print("9. Add Case Details")
     print("10. Update Legal Fee Payment")

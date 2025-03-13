@@ -24,7 +24,6 @@ def assign_advocate():
     else:
         print("No such case or advocate")
 
-
 def remove_advocate():
     session = get_session()
     try:
