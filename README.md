@@ -22,8 +22,10 @@ The Case Management System Backend is a robust solution designed to manage legal
 1. **Clone the Repository**:
    ```bash
    git clone 
-   cd case-management-system
-Set Up a Virtual Environment:
+   cd Project_Work
+2. Set Up a Virtual Environment:
+   
+   
 
 
 python3 -m venv .venv
