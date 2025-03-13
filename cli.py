@@ -4,6 +4,7 @@ from client import add_client
 from advocate import add_advocate, assign_advocate, remove_advocate
 from Casedetails import add_case_details
 from search import search_cases
+from documents import add_document
 from view import view_case_details
 
 
@@ -22,18 +23,20 @@ def main():
         elif choice == "3":
             update_case()
         elif choice == "4":
-            delete_case()
+            add_document()
         elif choice == "5":
-            add_advocate()
+            delete_case()
         elif choice == "6":
-            assign_advocate()
+            add_advocate()
         elif choice == "7":
-            remove_advocate()
+            assign_advocate()
         elif choice == "8":
-            add_case_details()
+            remove_advocate()
         elif choice == "9":
-            search_cases()
+            add_case_details()
         elif choice == "10":
+            search_cases()
+        elif choice == "11":
             view_case_details()
         
         
@@ -50,13 +53,14 @@ def menu():
     print("1. Add Client ")
     print("2. Add Case")
     print("3. Update Case")
-    print("4. Delete Case")
-    print("5. Add Advocate")
-    print("6. Assign Advocate")
-    print("7. Remove Advocate")
-    print("8. Add Case Details")
-    print("9. Search Case")
-    print("10. View Case Details")
+    print("4. Add Document")
+    print("5. Delete Case")
+    print("6. Add Advocate")
+    print("7. Assign Advocate")
+    print("8. Remove Advocate")
+    print("9. Add Case Details")
+    print("10. Search Case")
+    print("11. View Case Details")
   
 
 
