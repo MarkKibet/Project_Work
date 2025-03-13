@@ -11,8 +11,8 @@ The Case Management System Backend is a robust solution designed to manage legal
 
 ## Features
 
-- **Case Management**: Add, update, delete, and search cases.
-- **Client Management**: Add and manage clients associated with cases.
+- **Case Management**: Add, update, delete, search cases, and view case details.
+- **Client Management**: Add Clients and .
 - **Advocate Management**: Add advocates and assign them to cases.
 - **Search Functionality**: Search cases by status, name, court date, event type, and advocate.
 - **CLI and GUI**: Provides both command-line and graphical user interfaces.
@@ -23,14 +23,9 @@ The Case Management System Backend is a robust solution designed to manage legal
    ```bash
    git clone 
    cd Project_Work
-2. Set Up a Virtual Environment:
+2. **Set Up a Virtual Environment**:
+3. Database Setup
    
-   
-
-
-python3 -m venv .venv
-source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
-Install Dependencies
 
 
 
