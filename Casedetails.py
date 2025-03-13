@@ -32,3 +32,17 @@ def add_case_details():
         print(f"An error occurred: {e}")
     finally:
         session.close()
+
+def update_case_details():
+    session = get_session()
+    casedetails_id = int(input("Enter Case Details ID: "))
+    agreed_fee= input("Update the Legal Fee: ")
+
+    detail = session.query(CaseDetails).filter_by(id=casedetails_id).first()
+    if detail:
+        detail.agreed_fee= agreed_fee
+        session.commit()
+        print ("Legal Fee Updated")
+    else:
+        print("No such case details")
+

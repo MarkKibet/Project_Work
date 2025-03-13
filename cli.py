@@ -2,7 +2,7 @@ from close import exit_program
 from cases import (add_case, update_case, delete_case)
 from client import add_client
 from advocate import add_advocate, assign_advocate, remove_advocate
-from Casedetails import add_case_details
+from Casedetails import add_case_details, update_case_details
 from search import search_cases
 from documents import add_document
 from view import view_case_details
@@ -35,8 +35,10 @@ def main():
         elif choice == "9":
             add_case_details()
         elif choice == "10":
-            search_cases()
+            update_case_details()
         elif choice == "11":
+            search_cases()
+        elif choice == "12":
             view_case_details()
         
         
@@ -59,8 +61,9 @@ def menu():
     print("7. Assign Advocate")
     print("8. Remove Advocate")
     print("9. Add Case Details")
-    print("10. Search Case")
-    print("11. View Case Details")
+    print("10. Update Legal Fee Payment")
+    print("11. Search Case")
+    print("12. View Case Details")
   
 
 
