@@ -4,6 +4,7 @@ from client import add_client
 from advocate import add_advocate, assign_advocate, remove_advocate
 from Casedetails import add_case_details
 from search import search_cases
+from view import view_case_details
 
 
 
@@ -32,6 +33,8 @@ def main():
             add_case_details()
         elif choice == "9":
             search_cases()
+        elif choice == "10":
+            view_case_details()
         
         
        
@@ -53,6 +56,7 @@ def menu():
     print("7. Remove Advocate")
     print("8. Add Case Details")
     print("9. Search Case")
+    print("10. View Case Details")
   
 
 
