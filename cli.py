@@ -1,6 +1,7 @@
 from close import exit_program
 from cases import (add_case, update_case, delete_case)
 from client import add_client
+from advocate import add_advocate
 
 
 def main():
@@ -18,6 +19,8 @@ def main():
             update_case()
         elif choice == "4":
             delete_case()
+        elif choice == "5":
+            add_advocate()
         
         
        
@@ -36,6 +39,7 @@ def menu():
     print("2. Add Case")
     print("3. Update Case")
     print("4. Delete Case")
+    print("5. Add Advocate")
   
 
 
